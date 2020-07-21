@@ -11,9 +11,9 @@ import javax.servlet.ServletContextListener;
 public class Sample3 implements ServletContextListener {
 	@Override
 	public void contextInitialized(ServletContextEvent sce) {
-		
+		ObjectifyService.init();
 		ObjectifyService.register(UserPojo.class);
-
+        
 	}
 
 	@Override
